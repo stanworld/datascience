@@ -1,55 +1,63 @@
-import numpy as np
 import pandas as pd
 
-dataset = pd.read_csv('/home/stan/Code/datascience/DataSet/Data.csv')
-x=dataset.iloc[:,:-1].values
-y=dataset.iloc[:,3].values
+sal = pd.read_csv("/home/stan/Code/datascience/DataSet/Salaries.csv");
 
-# Handling missing data
-from sklearn.impute import SimpleImputer
-imp = SimpleImputer(missing_values=np.nan,strategy='mean')
+x=sal.head()
 
-def domainget(email):
-    return email.split('@')[1]
+#x=sal.info()
 
-x=domainget('user@domain.com')
-print(x)
+x=sal["BasePay"].mean();
 
-def containDog(input):
-    return "dog" in input
+x=sal["OvertimePay"].max();
 
-x=containDog("good dog")
-print(x)
+x=sal.loc[sal["EmployeeName"]=="JOSEPH DRISCOLL"]
 
-def countDogs(input):
-    count  = 0
-    for word in input.lower().split():
-        if word == 'dog':
-            count +=1
-    return count;
+y=x["TotalPayBenefits"]
 
-x=countDogs('how many dog in dog you dog')
-print(x)
+x=sal.loc[sal["TotalPayBenefits"].max()==sal["TotalPayBenefits"]]
 
-seq=['s1','s2','wer','tes']
-x=list(filter(lambda x: x[0]=='s',seq))
-print(x)
 
-x=np.zeros(10)
+x=sal.groupby("Year").mean()["BasePay"]
+
+x=sal["JobTitle"].nunique()
+
+x=sal["JobTitle"].value_counts().head(5)
+
+x=sal.groupby("Year").get_group(2013)["JobTitle"].value_counts()
+y=sum(x.loc[x==1])
+
+x=sum(sal["JobTitle"].apply(lambda x: "Chief" in x))
+
 print(x)
 
 import numpy as np
-import pandas as pd
+from plotly import __version__
+print(__version__)
 
-outside = ['G1','G1','G1','G2','G2','G2']
-inside = [1,2,3,1,2,3]
-hier_index= list(zip(outside,inside))
-hier_index= pd.MultiIndex.from_tuples(hier_index)
+import cufflinks as cf
+from plotly.offline import download_plotlyjs,init_notebook_mode,plot,iplot
+init_notebook_mode(connected=True)
+cf.go_offline()
+df = pd.DataFrame(np.random.randn(100,4),columns='A B C D'.split())
 
-print(hier_index)
+df2 = pd.DataFrame({'Category':['A','B','C'],'Values':[32,43,50]})
 
-df = {'A':[1,2,np.nan],'B':[5,np.nan,np.nan],'C':[1,2,3]}
-df =pd.DataFrame(df)
+import plotly
+import plotly.graph_objs as go
 
-t=df.dropna(axis=1)
-print(t)
+plotly.offline.init_notebook_mode(connected=True)
+
+plotly.offline.iplot({
+    "data": [go.Scatter(x=[1, 2, 3, 4], y=[4, 3, 2, 1])],
+    "layout": go.Layout(title="hello world")
+},auto_play=True)
+
+
+
+import plotly
+import plotly.graph_objs as go
+
+plotly.offline.plot({
+    "data": [go.Scatter(x=[1, 2, 3, 4], y=[4, 3, 2, 1])],
+    "layout": go.Layout(title="hello world")
+}, auto_open=True)
