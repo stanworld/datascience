@@ -34,30 +34,24 @@ import numpy as np
 from plotly import __version__
 print(__version__)
 
-import cufflinks as cf
-from plotly.offline import download_plotlyjs,init_notebook_mode,plot,iplot
-init_notebook_mode(connected=True)
-cf.go_offline()
-df = pd.DataFrame(np.random.randn(100,4),columns='A B C D'.split())
-
-df2 = pd.DataFrame({'Category':['A','B','C'],'Values':[32,43,50]})
-
 import plotly
 import plotly.graph_objs as go
 
-plotly.offline.init_notebook_mode(connected=True)
-
-plotly.offline.iplot({
-    "data": [go.Scatter(x=[1, 2, 3, 4], y=[4, 3, 2, 1])],
-    "layout": go.Layout(title="hello world")
-},auto_play=True)
-
-
-
-import plotly
-import plotly.graph_objs as go
 
 plotly.offline.plot({
     "data": [go.Scatter(x=[1, 2, 3, 4], y=[4, 3, 2, 1])],
     "layout": go.Layout(title="hello world")
 }, auto_open=True)
+
+import matplotlib.pyplot as plt
+
+x=np.linspace(0,5,11)
+y = x**2
+
+fig = plt.figure()
+
+axes = fig.add_axes([0.1,0.1,0.8,0.8])
+axes.plot(x,y)
+axes1 = fig.add_axes([0.2,0.4,0.3,0.4])
+axes1.plot(x,y)
+plt.show()
