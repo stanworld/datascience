@@ -62,8 +62,6 @@ sns.clustermap(dayHour,cmap='viridis')
 
 plt.show()
 
-###########################
-# Financial data exercise
 
 
 
