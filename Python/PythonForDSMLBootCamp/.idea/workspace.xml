@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6e87c4c-a9f4-412a-9717-7089d7a3994d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/KNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capstone.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mlrun.py" beforeDir="false" afterPath="$PROJECT_DIR$/mlrun.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,12 +15,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Capstone.py">
+        <entry file="file://$PROJECT_DIR$/KNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="326">
+              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mlrun.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="43" column="114" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="117" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,8 +54,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/mlrun.py" />
         <option value="$PROJECT_DIR$/Capstone.py" />
+        <option value="$PROJECT_DIR$/mlrun.py" />
+        <option value="$PROJECT_DIR$/KNN.py" />
       </list>
     </option>
   </component>
@@ -97,7 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Capstone">
+  <component name="RunManager" selected="Python.KNN">
     <configuration name="Capstone" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonForDSMLBootCamp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,6 +125,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Capstone.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="KNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonForDSMLBootCamp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KNN.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,11 +197,13 @@
       <item itemvalue="Python.Capstone" />
       <item itemvalue="Python.mlrun" />
       <item itemvalue="Python.run" />
+      <item itemvalue="Python.KNN" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Capstone" />
+        <item itemvalue="Python.KNN" />
         <item itemvalue="Python.mlrun" />
+        <item itemvalue="Python.Capstone" />
         <item itemvalue="Python.run" />
       </list>
     </recent_temporary>
@@ -217,7 +254,28 @@
       <option name="project" value="LOCAL" />
       <updated>1561686229321</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="capstone exercise">
+      <created>1561918114049</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561918114049</updated>
+    </task>
+    <task id="LOCAL-00007" summary="capstone exercise">
+      <created>1561918121820</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561918121820</updated>
+    </task>
+    <task id="LOCAL-00008" summary="capstone exercise">
+      <created>1561944392844</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1561944392844</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -234,7 +292,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32937366" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32937366" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32937366" />
@@ -251,16 +309,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="capstone exercise" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mlrun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp-plot.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -276,10 +324,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Capstone.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="461">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mlrun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="43" column="114" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="117" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
